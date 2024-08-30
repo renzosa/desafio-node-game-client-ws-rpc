@@ -1,0 +1,29 @@
+{
+  "welcome": "Bienvenue sur le Serveur de Jeu !",
+  "login": "Connexion",
+  "logout": "Déconnexion",
+  "username": "Nom d'utilisateur",
+  "password": "Mot de passe",
+  "invalidCredentials": "Nom d'utilisateur ou mot de passe invalide",
+  "loginSuccessful": "Connexion réussie",
+  "logoutSuccessful": "Déconnexion réussie",
+  "notAuthenticated": "Non authentifié",
+  "serverStatus": "État du serveur",
+  "online": "en ligne",
+  "offline": "hors ligne",
+  "invalidateToken": "Invalider le Jeton",
+  "serversOffline": "Les serveurs sont hors ligne... veuillez patienter !",
+  "actions": {
+    "request": "Demander",
+    "pay": "Payer",
+    "skip": "Passer"
+  },
+  "connectionClosed": "Connexion fermée",
+  "invalidAction": "Action invalide",
+  "enterUsername": "Entrez votre nom d'utilisateur",
+  "enterPassword": "Entrez votre mot de passe",
+  "actionSuccess": "Action effectuée avec succès",
+  "actionError": "Erreur lors de l'exécution de l'action",
+  "sessionExpired": "Session expirée, veuillez vous reconnecter",
+  "tokenInvalidated": "Le jeton a été invalidé"
+}

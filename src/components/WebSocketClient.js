@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { UserIcon, KeyIcon, ArrowRightEndOnRectangleIcon, ArrowRightStartOnRectangleIcon, ShieldExclamationIcon } from '@heroicons/react/16/solid';
+import languages from '../config/languages.json';
 
 const WebSocketClient = () => {
   const { t, i18n } = useTranslation();
@@ -127,10 +128,12 @@ const WebSocketClient = () => {
     setActionMessage(t('tokenInvalidated'));
   };
 
-  const toggleLanguage = () => {
-    const newLang = i18n.language === 'pt-BR' ? 'en-US' : 'pt-BR';
-    i18n.changeLanguage(newLang);
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    document.getElementById('html-root').lang = lang;
   };
+
+  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
   const serverStatus = isConnected ? t('online') : t('offline');
   const statusClass = isConnected ? 'text-success' : 'text-danger';
@@ -146,13 +149,30 @@ const WebSocketClient = () => {
               {t('serverStatus')}: <strong className={statusClass}>{serverStatus}</strong>
             </span>
 
-            <button className="btn btn-outline-light btn-sm me-3"
-              onClick={toggleLanguage}>
-              {i18n.language === 'pt-BR' ? 'EN' : 'PT'}
-            </button>
+            <div className="dropdown ms-2">
+              <button
+                className="btn btn-outline-light btn-sm dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                {currentLanguage.flag}
+              </button>
+              <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                {languages.map((lang) => (
+                  <li key={lang.code}>
+                    <a className="dropdown-item d-flex justify-content-between align-items-center"
+                      onClick={() => changeLanguage(lang.code)} style={{ cursor: 'pointer' }}>
+                      {lang.name}
+                      <span className="badge bg-primary p-1 ms-5">{lang.flag}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             {token && isConnected ? (
-              <div className="ms-3">
+              <div className="ms-2">
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                   <UserIcon className='icon-text' />
                 </button>

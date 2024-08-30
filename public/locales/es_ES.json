@@ -1,0 +1,29 @@
+{
+  "welcome": "¡Bienvenido al Servidor de Juegos!",
+  "login": "Iniciar sesión",
+  "logout": "Cerrar sesión",
+  "username": "Nombre de usuario",
+  "password": "Contraseña",
+  "invalidCredentials": "Nombre de usuario o contraseña inválidos",
+  "loginSuccessful": "Inicio de sesión exitoso",
+  "logoutSuccessful": "Cierre de sesión exitoso",
+  "notAuthenticated": "No autenticado",
+  "serverStatus": "Estado del servidor",
+  "online": "en línea",
+  "offline": "fuera de línea",
+  "invalidateToken": "Invalidar Token",
+  "serversOffline": "Los servidores están fuera de línea... ¡por favor espere!",
+  "actions": {
+    "request": "Solicitar",
+    "pay": "Pagar",
+    "skip": "Saltar"
+  },
+  "connectionClosed": "Conexión cerrada",
+  "invalidAction": "Acción inválida",
+  "enterUsername": "Ingrese su nombre de usuario",
+  "enterPassword": "Ingrese su contraseña",
+  "actionSuccess": "Acción realizada con éxito",
+  "actionError": "Error al realizar la acción",
+  "sessionExpired": "La sesión ha expirado, por favor inicie sesión de nuevo",
+  "tokenInvalidated": "El token ha sido invalidado"
+}

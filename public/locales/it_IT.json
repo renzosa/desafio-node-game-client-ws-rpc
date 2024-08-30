@@ -1,0 +1,29 @@
+{
+  "welcome": "Benvenuto al Server di Gioco!",
+  "login": "Accedi",
+  "logout": "Esci",
+  "username": "Nome utente",
+  "password": "Password",
+  "invalidCredentials": "Nome utente o password non validi",
+  "loginSuccessful": "Accesso riuscito",
+  "logoutSuccessful": "Disconnessione riuscita",
+  "notAuthenticated": "Non autenticato",
+  "serverStatus": "Stato del server",
+  "online": "online",
+  "offline": "offline",
+  "invalidateToken": "Invalida Token",
+  "serversOffline": "I server sono offline... per favore attendi!",
+  "actions": {
+    "request": "Richiedi",
+    "pay": "Paga",
+    "skip": "Salta"
+  },
+  "connectionClosed": "Connessione chiusa",
+  "invalidAction": "Azione non valida",
+  "enterUsername": "Inserisci il tuo nome utente",
+  "enterPassword": "Inserisci la tua password",
+  "actionSuccess": "Azione eseguita con successo",
+  "actionError": "Errore nell'esecuzione dell'azione",
+  "sessionExpired": "Sessione scaduta, per favore accedi di nuovo",
+  "tokenInvalidated": "Il token è stato invalidato"
+}
